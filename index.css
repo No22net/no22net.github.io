@@ -188,7 +188,6 @@ section#our {
 .cards {
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(180px , 250px)) ;
-    grid-template-rows: repeat(auto-fill, minmax(300px , 350px)) ;
     grid-gap: 1% ;
     height:500px ;
     overflow-y:scroll;
@@ -247,8 +246,8 @@ section#our {
     .cards {
         font-size: smaller;
         display: grid;
-        grid-template-columns:repeat(auto-fill, minmax(100px , 150px)) ;
-        grid-template-rows: repeat(auto-fill, minmax(100px , 150px)) ;
+        grid-template-columns:repeat(auto-fill, minmax(100px , 200px)) ;
+        grid-template-rows: repeat(auto-fill, minmax(100px , 200px)) ;
         height:500px ;
         overflow-y:scroll;
     }
