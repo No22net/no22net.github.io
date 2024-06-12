@@ -12,6 +12,7 @@ body {
     background: #d3d9d4;
     text-align: center;
     color: aliceblue;
+    transition: all 0.3s ease;
 }
 a {
     text-decoration: none;
@@ -52,6 +53,7 @@ nav ul {
 nav ul li {
     margin: 5px;
     padding: 5px;
+    transition: all 0.3s ease;
 }
 nav ul li:hover {
     background: #ffffff25;
@@ -64,11 +66,14 @@ nav ul li:hover {
 .main-header {
     text-align: center;
     color: gold;
-    background: #124E66;
+    background: #124e66dc;
     display: flex;
     justify-content: space-between;
     height: 55px;
     align-items: center;
+    position: sticky;
+    top:0 ;
+    backdrop-filter: blur(20px);
 }
 .link {
     text-decoration: none;
@@ -167,6 +172,8 @@ section#our {
     display: flex;
     justify-items: center;
     flex-direction: column;
+    overflow-x: scroll;
+    height: 380px ;
 }
 .feed div {
     margin: 10px;
@@ -184,13 +191,15 @@ section#our {
     padding: 5px;
     border-radius: 20px;
     margin: 5%;
+    transition: all 0.3s ease;
 }
 .cards {
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(180px , 250px)) ;
     grid-gap: 1% ;
     height:500px ;
-    overflow-y:scroll;
+    overflow-x:scroll;
+    
 }
 .cards div img {
     width: 75%;
@@ -210,6 +219,16 @@ section#our {
 }
 .ababy {
     color: #124E66;
+}
+span {
+    color: #ffc400;
+    transition: all 0.3s ease;
+}
+span:hover {
+    padding: 1px 5px;
+    background-color: #ffc400 ;
+    color:#212A31;
+    border-radius: 7px;
 }
 
 
@@ -237,7 +256,7 @@ section#our {
         height: 45px;
     }
     .oralogo {
-        width: 360px;
+        width: 340px;
     }
     .hamberger i {
         font-size: 2rem;
@@ -246,8 +265,7 @@ section#our {
     .cards {
         font-size: smaller;
         display: grid;
-        grid-template-columns:repeat(auto-fill, minmax(100px , 200px)) ;
-        grid-template-rows: repeat(auto-fill, minmax(100px , 200px)) ;
+        grid-template-columns:repeat(auto-fill, minmax(80px , 200px)) ;
         height:500px ;
         overflow-y:scroll;
     }
@@ -266,6 +284,7 @@ section#our {
             justify-items: center;
             align-items: center;
             flex-direction: row;
+            height: 200px;
         }
     .pages {
             margin: 5px;
@@ -281,7 +300,10 @@ section#our {
             overflow-x:scroll;
         }
         .feed div {
-            width: 100px;
+            width: 300px;
+        }
+        .logo {
+            display: none;
         }
         
     
