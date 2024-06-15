@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: "vazirmatn" , "Fira Code", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style:normal;
@@ -29,7 +29,7 @@ a {
     border-radius: 6px;
 }
 .notop {
-    margin-left: 5px;
+    margin-right: 10px ;
 }
 nav {
     justify-items:flex-end;
@@ -38,7 +38,7 @@ nav {
 }
 .navbar {
     display: flex;
-    margin-right: 30px;
+    margin-left: 25px;
 }
 .logoimg {
     width: 60px;
@@ -57,6 +57,8 @@ nav ul li {
 nav ul li:hover {
     background: #ffffff25;
     border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px ;
 }
 .logo {
     width: 40px ;
@@ -172,7 +174,7 @@ section#our {
     justify-items: center;
     flex-direction: column;
     overflow-x: scroll;
-    height: 380px ;
+    height: 440px ;
 }
 .feed div {
     margin: 10px;
